@@ -21,6 +21,7 @@ export function About({ technologies }: { technologies: Tech[] }) {
         <a
           href="https://drive.google.com/file/d/1RF1t9CxyklRjNrM3IBkY14klxnwVZLiV/view?usp=drive_link"
           className="jc-btn"
+          target="_blank"
         >
           Download CV <Download size={14} />
         </a>
