@@ -1,0 +1,5 @@
+import { ChevronDown } from "lucide-react";
+type ExperienceItem = { role: string; company: string; period: string };
+export function Experience({ items, expanded, onToggle }: { items: ExperienceItem[]; expanded: boolean; onToggle: () => void }) {
+  return <section id="experience" className="jc-experience"><div className="jc-experience-heading"><div className="jc-lbl">Experience</div><h2 className="jc-experience-title">Professional Journey</h2></div><div className="jc-timeline">{items.slice(0, expanded ? items.length : 3).map((item) => <article className="jc-timeline-item" key={`${item.company}-${item.period}`}><span className="jc-timeline-dot" aria-hidden="true" /><div className="jc-timeline-card"><h3>{item.role}</h3><div className="jc-timeline-company">{item.company}</div><div className="jc-timeline-period">{item.period}</div></div></article>)}</div>{items.length > 3 && <button type="button" className={`jc-show-more ${expanded ? "expanded" : ""}`} onClick={onToggle}>{expanded ? "Show Less" : "Show More"}<ChevronDown size={14} /></button>}</section>;
+}
