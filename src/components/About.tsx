@@ -18,7 +18,10 @@ export function About({ technologies }: { technologies: Tech[] }) {
           innovation. Works collaboratively and is highly committed to producing
           quality results.
         </p>
-        <a href="#" className="jc-btn">
+        <a
+          href="https://drive.google.com/file/d/1RF1t9CxyklRjNrM3IBkY14klxnwVZLiV/view?usp=drive_link"
+          className="jc-btn"
+        >
           Download CV <Download size={14} />
         </a>
       </div>
@@ -29,7 +32,11 @@ export function About({ technologies }: { technologies: Tech[] }) {
         </div>
         <div className="jc-stack-grid">
           {technologies.map((tech) => (
-            <div className="jc-tech jc-reveal" key={tech.name} title={tech.name}>
+            <div
+              className="jc-tech jc-reveal"
+              key={tech.name}
+              title={tech.name}
+            >
               {tech.svg ? (
                 <span
                   className="jc-tech-icon"
