@@ -66,6 +66,7 @@ export const TECH_STACK = [
   ["Bootstrap", "bootstrap/bootstrap-original.svg"],
   ["Tailwind CSS", "tailwindcss/tailwindcss-original.svg"],
   ["MySQL", "mysql/mysql-original-wordmark.svg"],
+  ["PostgreSQL", "/postgresql/postgresql-original.svg"],
   ["Supabase", "supabase/supabase-original.svg"],
   ["Git", "git/git-original.svg"],
   ["Docker", "docker/docker-original.svg"],
@@ -95,7 +96,7 @@ export const PROJECTS = [
   {
     slug: "hris",
     t: "Dashboard HRIS KodingYuk!",
-    stack: ["TypeScript", "Next.js", "Tailwind CSS"],
+    stack: ["TypeScript", "Next.js", "Tailwind CSS", "PostgreSQL"],
     f: "black",
     shots: getProjectShots("hris"),
     description:
@@ -140,7 +141,7 @@ export const PROJECTS = [
   {
     slug: "dinkominfotik",
     t: "Web Dinkominfotik",
-    stack: ["PHP", "Laravel", "Tailwind CSS", "MySQL"],
+    stack: ["JavaScript", "PHP", "Laravel", "Tailwind CSS", "MySQL"],
     f: "black",
     shots: getProjectShots("dinkominfotik"),
     description:

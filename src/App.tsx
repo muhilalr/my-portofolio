@@ -39,14 +39,15 @@ function useScrollReveal() {
           const parent = entry.target.closest(".jc-stack-grid,.jc-showcase-grid,.jc-timeline");
           if (parent) {
             const siblings = Array.from(parent.querySelectorAll(revealSelector));
+            const isTechStack = parent.classList.contains("jc-stack-grid");
             (entry.target as HTMLElement).style.transitionDelay =
-              `${siblings.indexOf(entry.target as Element) * 120}ms`;
+              `${siblings.indexOf(entry.target as Element) * (isTechStack ? 55 : 120)}ms`;
           }
             entry.target.classList.add("visible");
             observer.unobserve(entry.target);
             window.setTimeout(() => {
               (entry.target as HTMLElement).style.transitionDelay = "";
-            }, 750);
+          }, parent?.classList.contains("jc-stack-grid") ? 450 : 750);
         }),
       { threshold: 0.15, rootMargin: "0px 0px -40px 0px" },
     );
