@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import "./App.css";
 import { About } from "./components/About";
 import { CertificateModal } from "./components/CertificateModal";
@@ -199,6 +200,7 @@ export default function App() {
         email={EMAIL}
       />
       <Footer />
+      <Analytics />
     </div>
   );
 }
