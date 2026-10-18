@@ -19,7 +19,7 @@ export function About({ technologies }: { technologies: Tech[] }) {
           quality results.
         </p>
         <a
-          href="https://drive.google.com/file/d/11eizQMlu-7e_V9jz75Dy-f7jNx8Pwasu/view?usp=sharing"
+          href="https://drive.google.com/file/d/1FsrqnpNPEq3XWYj2a9LCtt48kKiLZ0j7/view?usp=sharing"
           className="jc-btn"
           target="_blank"
         >
